@@ -1,0 +1,14 @@
+a=0
+b=0
+c=0
+c1=['e', '!', 'u', ')', 'd', 'x', '@', '#', 'o', '1', 'D', '2', '4', 't', ';', '/', 'm', 'P', 'q', 'N', ':', 'Y', 'c', 'V', 'I', "'", 'k', 'Q', 'R', 'b', 'g', '0', '7', 'Z', 'C', 'p', 'z', 'M', 'w', 'v', 'h', 'W', '?', 'K', 'A', 'L', '*', '9', 'H', '-', 'j', '_', 'l', 'J', '&', '8', '(', '6', '3', 'f', '$', 'i', 'E', 'U', 'X', 'F', 'T', 'B', 'a', 'y', 'G', 'S', '+', 's', 'n', 'r', '5', 'O']
+x=len(c1)
+with open("5_digit_brute.txt","w") as brute:
+
+    for a in range(0,x):
+        for b in range(0,x):
+            for c in range(0,x):
+                for d in range(0,x):
+                    for e in range(0,x):
+                        brute.write(c1[a]+ c1[b]+c1[c]+c1[d]+c1[e])
+                        brute.write("\n")
